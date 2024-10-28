@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'appku/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Riwayat Pendidikan</h1>
+        <ul class="education-list">
+            <li>SD SDIT Imam Bukhari (2014-2017)</li>
+            <li>MTs Plus Darul Hufadz (2017-2020)</li>
+            <li>SMA Tamansiswa Rancaekek (2020-2023)</li>
+            <li>Universitas Pendidikan Indonesia (2023-Sekarang)</li>
+        </ul>
+        <a href="{% url 'profil_umum' %}" class="back-link">Kembali ke Profil Umum</a>
+    </div>
+</body>
+</html>
