@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Umum</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'apkku/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Profil Umum</h1>
+        <div class="profile-info">
+            <p><strong>Nama:</strong> Najwa Nabila Hermawan</p>
+            <p><strong>Email:</strong> najwanabilaher@gmail.com</p>
+            <p><strong>Nomor Telepon:</strong> 0897-8734-8273</p>
+        </div>
+
+        <h2>Navigasi</h2>
+        <ul class="navigation">
+            <li><a href="{% url 'pendidikan' %}">Pendidikan</a></li>
+            <li><a href="{% url 'pengalaman_kerja' %}">Pengalaman Kerja</a></li>
+            <li><a href="{% url 'sosial_media' %}">Sosial Media</a></li>
+        </ul>
+    </div>
+</body>
+</html>
